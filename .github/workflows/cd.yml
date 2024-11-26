@@ -1,7 +1,7 @@
 on:
-  push:
-    branches:
-      - main
+  pull_request:
+    types:
+      - closed
 
 env:
   REGION_DEFAULT: us-east-1
