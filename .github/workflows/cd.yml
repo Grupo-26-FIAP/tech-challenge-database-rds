@@ -1,6 +1,7 @@
 on:
   push:
-    - main
+    branches:
+      - main
 
 env:
   REGION_DEFAULT: us-east-1
