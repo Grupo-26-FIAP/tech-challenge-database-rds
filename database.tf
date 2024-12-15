@@ -10,7 +10,7 @@ resource "aws_db_instance" "tech-challenge-rds" {
   password                 = "postgres"
   parameter_group_name     = "default.postgres16"
   skip_final_snapshot      = true
-  publicly_accessible      = false
+  publicly_accessible      = true
   backup_retention_period  = 7
   delete_automated_backups = true
 
