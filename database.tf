@@ -6,8 +6,8 @@ resource "aws_db_instance" "tech-challenge-rds" {
   engine                   = "postgres"
   engine_version           = "16.3"
   instance_class           = "db.t4g.micro"
-  username                 = "postgres"
-  password                 = "postgres"
+  username                 = var.postgres_user
+  password                 = var.postgres_password
   parameter_group_name     = "default.postgres16"
   skip_final_snapshot      = true
   publicly_accessible      = true
