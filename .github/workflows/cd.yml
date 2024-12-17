@@ -47,3 +47,7 @@ jobs:
       - name: Terraform Apply
         id: apply
         run: terraform apply -input=false -auto-approve
+        env:
+          TF_VAR_POSTGRES_DB: ${{ secrets.TF_VAR_POSTGRES_DB }}
+          TF_VAR_POSTGRES_USER: ${{ secrets.TF_VAR_POSTGRES_USER }}
+          TF_VAR_POSTGRES_PASSWORD: ${{ secrets.TF_VAR_POSTGRES_PASSWORD }}
