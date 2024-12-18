@@ -48,6 +48,6 @@ jobs:
         id: apply
         run: terraform apply -input=false -auto-approve
         env:
-          TF_VAR_POSTGRES_DB: ${{ secrets.TF_VAR_POSTGRES_DB }}
-          TF_VAR_POSTGRES_USER: ${{ secrets.TF_VAR_POSTGRES_USER }}
-          TF_VAR_POSTGRES_PASSWORD: ${{ secrets.TF_VAR_POSTGRES_PASSWORD }}
+          TF_VAR_postgres_db: ${{ secrets.TF_VAR_POSTGRES_DB }}
+          TF_VAR_postgres_user: ${{ secrets.TF_VAR_POSTGRES_USER }}
+          TF_VAR_postgres_password: ${{ secrets.TF_VAR_POSTGRES_PASSWORD }}
