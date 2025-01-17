@@ -1,6 +1,6 @@
 
-resource "aws_db_instance" "tech-challenge-rds" {
-  identifier               = "tech-challenge-rds-tf"
+resource "aws_db_instance" "tech-challenge-product" {
+  identifier               = "tech-challenge-product"
   allocated_storage        = 20
   max_allocated_storage    = 100
   engine                   = "postgres"
@@ -16,6 +16,6 @@ resource "aws_db_instance" "tech-challenge-rds" {
 
   vpc_security_group_ids = [aws_security_group.database_security_group.id]
   tags = {
-    Name = "tech-challenge-rds"
+    Name = "tech-challenge-product-rds"
   }
 }
